@@ -3,6 +3,3 @@
 
 ### Project URL
 > https://vattsopheak.com
-
-### Deploy Server
-> Vercel
