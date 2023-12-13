@@ -34,6 +34,11 @@ export function constructMetadata({
     },
     icons,
     metadataBase: new URL('https://www.vattsopheak.com'),
+    alternates: {
+      media: {
+        URL: "https://www.vattsopheak.com/icons/favicon.ico"
+      },
+    },
     ...(noIndex && {
       robots: {
         index: false,
