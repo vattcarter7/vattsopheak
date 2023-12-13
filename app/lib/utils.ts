@@ -4,13 +4,11 @@ export function constructMetadata({
   title = "Vatt Sopheak",
   description = "Vatt Sopheak personal contact info",
   image = "/images/vattsopheak.jpeg",
-  icons = "/icons/favicon.ico",
   noIndex = false
 }: {
   title?: string
   description?: string
   image?: string
-  icons?: string
   noIndex?: boolean
 } = {}): Metadata {
   return {
@@ -32,13 +30,12 @@ export function constructMetadata({
       images: [image],
       creator: "@vattsopheak"
     },
-    icons,
-    metadataBase: new URL('https://www.vattsopheak.com'),
-    alternates: {
-      media: {
-        URL: "https://www.vattsopheak.com/icons/favicon.ico"
-      },
+    icons: {
+      icon: 'https://www.vattsopheak.com/icons/favicon.ico',
+      shortcut: 'https://www.vattsopheak.com/icons/favicon.ico',
+      apple: 'https://www.vattsopheak.com/icons/favicon.ico',
     },
+    metadataBase: new URL('https://www.vattsopheak.com'),
     ...(noIndex && {
       robots: {
         index: false,
