@@ -7,6 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Vatt Sopheak',
   description: 'Vatt Sopheak personal contact info',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Vatt Sopheak', 'Portfolio', 'Personal Info'],
+  authors: [{ name: 'Vatt Sopheak', url: 'https://www.vattsopheak.com/' }],
+  creator: 'Vatt Sopheak',
+  openGraph: {
+    images: '/images/vattsopheak.jpeg',
+  },
 }
 
 export default function RootLayout({
