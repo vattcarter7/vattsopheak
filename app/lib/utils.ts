@@ -4,7 +4,7 @@ export function constructMetadata({
   title = "Vatt Sopheak",
   description = "Vatt Sopheak personal contact info",
   image = "/images/vattsopheak.jpeg",
-  icons = "/favicon.ico",
+  icons = "/icons/favicon.ico",
   noIndex = false
 }: {
   title?: string
