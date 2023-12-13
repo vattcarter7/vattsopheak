@@ -31,9 +31,12 @@ export function constructMetadata({
       creator: "@vattsopheak"
     },
     icons: {
-      icon: 'https://www.vattsopheak.com/icons/favicon.ico',
-      shortcut: 'https://www.vattsopheak.com/icons/favicon.ico',
-      apple: 'https://www.vattsopheak.com/icons/favicon.ico',
+      icon: {
+        url: "https://www.vattsopheak.com/icons/favicon.ico"
+      },
+      apple: {
+        url: "https://www.vattsopheak.com/icons/favicon.ico"
+      },
     },
     metadataBase: new URL('https://www.vattsopheak.com'),
     ...(noIndex && {
