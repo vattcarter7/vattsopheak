@@ -32,12 +32,13 @@ export function constructMetadata({
     },
     icons: {
       icon: {
-        url: "https://www.vattsopheak.com/icons/favicon.ico"
+        url: "https://www.vattsopheak.com/favicon.ico",
       },
       apple: {
-        url: "https://www.vattsopheak.com/icons/favicon.ico"
+        url: "https://www.vattsopheak.com/apple-touch-icon.png"
       },
     },
+    manifest: `https://www.vattsopheak.com/site.webmanifest`,
     metadataBase: new URL('https://www.vattsopheak.com'),
     ...(noIndex && {
       robots: {
