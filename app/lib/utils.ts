@@ -38,6 +38,7 @@ export function constructMetadata({
         url: "https://www.vattsopheak.com/apple-touch-icon.png"
       },
     },
+    themeColor: "#ffffff",
     manifest: `https://www.vattsopheak.com/site.webmanifest`,
     metadataBase: new URL('https://www.vattsopheak.com'),
     ...(noIndex && {
