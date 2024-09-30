@@ -30,7 +30,7 @@ export default function Home() {
             
             alt="vatt sopheak instagram page"
           />
-          <span className='ml-2'>instagram.com/vattsopheak</span>
+          <span className='ml-2'>vattsopheak</span>
         </Link>
       </div>
     </main>
