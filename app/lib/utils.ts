@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { BASE_URL } from "../constants/url"
 
 export function constructMetadata({
   title = "Vatt Sopheak",
@@ -32,14 +33,14 @@ export function constructMetadata({
     },
     icons: {
       icon: {
-        url: "https://www.vattsopheak.com/favicon.ico",
+        url: BASE_URL + "/favicon.ico",
       },
       apple: {
-        url: "https://www.vattsopheak.com/apple-touch-icon.png"
+        url: BASE_URL + "/apple-touch-icon.png"
       },
     },
-    manifest: `https://www.vattsopheak.com/site.webmanifest`,
-    metadataBase: new URL('https://www.vattsopheak.com'),
+    manifest: `/site.webmanifest`,
+    metadataBase: new URL(BASE_URL),
     ...(noIndex && {
       robots: {
         index: false,
